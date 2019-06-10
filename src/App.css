@@ -9,3 +9,6 @@
 .affichage{
     margin-top:10rem;
 }
+.is-active{
+    color:red
+}

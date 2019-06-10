@@ -39,28 +39,28 @@ export default class NavMenu extends React.Component {
             <Nav className="ml-auto nav-links" navbar>
               <NavItem className='item'>
                 <NavLink href="#">
-                  <Link to="/home">HOME</Link>
+                  <Link style={{textDecoration:'none',color:'Gray'}} to="/home">HOME</Link>
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret >
-                  <Link to="/services">Services</Link>
+                  <Link style={{textDecoration:'none',color:'Gray'}}to="/services">Services</Link>
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem >
-                    <Link to="/services/entrepreneurs">For entrepreneurs</Link>
+                    <Link style={{textDecoration:'none',color:'Gray'}}to="/services/entrepreneurs">For entrepreneurs</Link>
                   </DropdownItem>
                   <DropdownItem >
-                    <Link to="/services/students">For students</Link>
+                    <Link style={{textDecoration:'none',color:'Gray'}}to="/services/students">For students</Link>
                   </DropdownItem>
                   <DropdownItem >
-                    <Link to="/services/hobbyiests">For hobbyiests</Link>
+                    <Link style={{textDecoration:'none',color:'Gray'}}to="/services/hobbyiests">For hobbyiests</Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem className='item'>
                 <NavLink href="#">
-                  <Link to="/contact">Contact us</Link>
+                  <Link style={{textDecoration:'none',color:'Gray'}}to="/contact">Contact us</Link>
                 </NavLink>
               </NavItem>
             </Nav>
