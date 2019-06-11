@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Route, Link } from "react-router-dom";
+import { NavLink,Route, } from "react-router-dom";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -38,30 +37,30 @@ export default class NavMenu extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto nav-links" navbar>
               <NavItem className='item'>
-                <NavLink href="#">
-                  <Link style={{textDecoration:'none',color:'Gray'}} to="/home">HOME</Link>
-                </NavLink>
+                
+                  <NavLink activeStyle={{color:'red'}} style={{textDecoration:'none',color:'Gray'}} to="/home">Home</NavLink>
+                
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret >
-                  <Link style={{textDecoration:'none',color:'Gray'}}to="/services">Services</Link>
+                  <NavLink activeStyle={{color:'red'}} style={{textDecoration:'none',color:'Gray'}}to="/services">Services</NavLink>
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem >
-                    <Link style={{textDecoration:'none',color:'Gray'}}to="/services/entrepreneurs">For entrepreneurs</Link>
+                    <NavLink activeStyle={{color:'red'}} style={{textDecoration:'none',color:'Gray'}}to="/services/entrepreneurs">For entrepreneurs</NavLink>
                   </DropdownItem>
                   <DropdownItem >
-                    <Link style={{textDecoration:'none',color:'Gray'}}to="/services/students">For students</Link>
+                    <NavLink activeStyle={{color:'red'}} style={{textDecoration:'none',color:'Gray'}}to="/services/students">For students</NavLink>
                   </DropdownItem>
                   <DropdownItem >
-                    <Link style={{textDecoration:'none',color:'Gray'}}to="/services/hobbyiests">For hobbyiests</Link>
+                    <NavLink activeStyle={{color:'red'}} style={{textDecoration:'none',color:'Gray'}}to="/services/hobbyiests">For hobbyiests</NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem className='item'>
-                <NavLink href="#">
-                  <Link style={{textDecoration:'none',color:'Gray'}}to="/contact">Contact us</Link>
-                </NavLink>
+                
+                  <NavLink activeStyle={{color:'red'}} style={{textDecoration:'none',color:'Gray'}}to="/contact">Contact us</NavLink>
+               
               </NavItem>
             </Nav>
           </Collapse>
